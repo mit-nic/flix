@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="182" id="S5e-ys-D1D">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="182" id="S5e-ys-D1D" customClass="MovieCell" customModule="flix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="182"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S5e-ys-D1D" id="oq5-zF-pk1">
@@ -53,6 +53,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="overviewLabel" destination="mjB-EU-wIX" id="b63-q9-Zea"/>
+                                            <outlet property="titleLabel" destination="Bg2-EK-S6i" id="WCA-Jt-tAf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

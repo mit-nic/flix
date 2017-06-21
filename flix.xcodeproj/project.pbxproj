@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A90B645E1EFB1D38008ECC67 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B645D1EFB1D38008ECC67 /* NowPlayingViewController.swift */; };
+		A90B64601EFB2D7C008ECC67 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */; };
 		A9E9AD621EFB1050007931C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9AD611EFB1050007931C3 /* AppDelegate.swift */; };
 		A9E9AD671EFB1050007931C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E9AD651EFB1050007931C3 /* Main.storyboard */; };
 		A9E9AD691EFB1050007931C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E9AD681EFB1050007931C3 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		A90B645D1EFB1D38008ECC67 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		A9E9AD5E1EFB1050007931C3 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E9AD611EFB1050007931C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E9AD661EFB1050007931C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				A9E9AD681EFB1050007931C3 /* Assets.xcassets */,
 				A9E9AD6A1EFB1050007931C3 /* LaunchScreen.storyboard */,
 				A9E9AD6D1EFB1050007931C3 /* Info.plist */,
+				A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				A90B645E1EFB1D38008ECC67 /* NowPlayingViewController.swift in Sources */,
 				A9E9AD621EFB1050007931C3 /* AppDelegate.swift in Sources */,
+				A90B64601EFB2D7C008ECC67 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
