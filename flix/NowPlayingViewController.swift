@@ -12,6 +12,7 @@ import AlamofireImage
 class NowPlayingViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var movies : [[String: Any]] = []
     var refreshControl: UIRefreshControl!
@@ -33,7 +34,6 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
             }
         }
         task.resume()
-
     }
     
     func didPullToRefresh(_ refreshControl: UIRefreshControl) {
@@ -42,14 +42,15 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         
     override func viewDidLoad() {
+        activityIndicator.startAnimating()
         super.viewDidLoad()
-        
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         
         tableView.dataSource = self
         fetchMovies()
+        activityIndicator.stopAnimating()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,6 +74,16 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         
         return cell
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell) {
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+        }
         
     }
     

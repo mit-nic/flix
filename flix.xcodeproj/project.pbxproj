@@ -10,6 +10,7 @@
 		3AB01B990E79F0C0A1980DFC /* Pods_flixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9669CE48BBEE2213688468E6 /* Pods_flixUITests.framework */; };
 		A90B645E1EFB1D38008ECC67 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B645D1EFB1D38008ECC67 /* NowPlayingViewController.swift */; };
 		A90B64601EFB2D7C008ECC67 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */; };
+		A97822B71EFB49740096E3C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97822B61EFB49740096E3C7 /* DetailViewController.swift */; };
 		A9E9AD621EFB1050007931C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9AD611EFB1050007931C3 /* AppDelegate.swift */; };
 		A9E9AD671EFB1050007931C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E9AD651EFB1050007931C3 /* Main.storyboard */; };
 		A9E9AD691EFB1050007931C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E9AD681EFB1050007931C3 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		9669CE48BBEE2213688468E6 /* Pods_flixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B645D1EFB1D38008ECC67 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		A97822B61EFB49740096E3C7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A9E9AD5E1EFB1050007931C3 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E9AD611EFB1050007931C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E9AD661EFB1050007931C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A97822B41EFB49120096E3C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A90B645D1EFB1D38008ECC67 /* NowPlayingViewController.swift */,
+				A97822B61EFB49740096E3C7 /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A97822B51EFB49330096E3C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		A9E9AD551EFB104F007931C3 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +158,13 @@
 		A9E9AD601EFB1050007931C3 /* flix */ = {
 			isa = PBXGroup;
 			children = (
-				A90B645D1EFB1D38008ECC67 /* NowPlayingViewController.swift */,
+				A97822B51EFB49330096E3C7 /* Views */,
+				A97822B41EFB49120096E3C7 /* ViewControllers */,
 				A9E9AD611EFB1050007931C3 /* AppDelegate.swift */,
 				A9E9AD651EFB1050007931C3 /* Main.storyboard */,
 				A9E9AD681EFB1050007931C3 /* Assets.xcassets */,
 				A9E9AD6A1EFB1050007931C3 /* LaunchScreen.storyboard */,
 				A9E9AD6D1EFB1050007931C3 /* Info.plist */,
-				A90B645F1EFB2D7C008ECC67 /* MovieCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -452,6 +471,7 @@
 				A90B645E1EFB1D38008ECC67 /* NowPlayingViewController.swift in Sources */,
 				A9E9AD621EFB1050007931C3 /* AppDelegate.swift in Sources */,
 				A90B64601EFB2D7C008ECC67 /* MovieCell.swift in Sources */,
+				A97822B71EFB49740096E3C7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
