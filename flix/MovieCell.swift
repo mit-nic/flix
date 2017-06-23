@@ -11,13 +11,15 @@ import UIKit
 class MovieCell: UITableViewCell {
 
     
-    @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var overviewTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        overviewTextView.textContainer.maximumNumberOfLines = 0
+//        overviewTextView.textContainer.lineBreakMode = NSLineBreakByTruncatingTail
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

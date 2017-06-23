@@ -13,8 +13,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var backdropImageView: UIImageView!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var releaseDateLabel: UILabel!
-    @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var overviewTextView: UITextView!
     
     var movie: [String: Any]?
     
@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
             if releaseString != nil {
                 releaseDateLabel.text! += releaseString!
             }
-            overviewLabel.text = movie["overview"] as? String
+            overviewTextView.text = movie["overview"] as? String
             let backdropPathString = movie["backdrop_path"] as! String
             let posterPathString = movie["poster_path"] as! String
             let baseURLString = "https://image.tmdb.org/t/p/w500"

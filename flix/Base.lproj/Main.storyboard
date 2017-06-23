@@ -44,17 +44,17 @@
                                                     <rect key="frame" x="8" y="4" width="104" height="172"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-EU-wIX">
-                                                    <rect key="frame" x="120" y="33" width="222" height="141"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SP-nQ-veB">
+                                                    <rect key="frame" x="120" y="40" width="222" height="136"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="overviewLabel" destination="mjB-EU-wIX" id="b63-q9-Zea"/>
+                                            <outlet property="overviewTextView" destination="2SP-nQ-veB" id="4Cv-5W-FL1"/>
                                             <outlet property="posterImageView" destination="zPW-rv-dcQ" id="pRA-Jv-hfM"/>
                                             <outlet property="titleLabel" destination="Bg2-EK-S6i" id="WCA-Jt-tAf"/>
                                             <segue destination="OV7-lv-sQk" kind="push" id="dad-yU-r1g"/>
@@ -114,20 +114,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="kXt-Qx-Kk3">
-                                <rect key="frame" x="33" y="415" width="309" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-eE-BH0">
+                                <rect key="frame" x="33" y="415" width="326" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movie Details" id="NlD-UH-iVe"/>
                     <connections>
                         <outlet property="backdropImageView" destination="ICL-1A-34k" id="Wof-me-RwS"/>
-                        <outlet property="overviewLabel" destination="kXt-Qx-Kk3" id="m8U-qv-9jC"/>
+                        <outlet property="overviewTextView" destination="I2e-eE-BH0" id="zXR-lQ-VaS"/>
                         <outlet property="posterImageView" destination="FoJ-s8-q2W" id="f3F-AW-Iz9"/>
                         <outlet property="releaseDateLabel" destination="WmY-3k-ptP" id="cpd-NJ-oKJ"/>
                         <outlet property="titleLabel" destination="atV-zI-ICD" id="RPm-Fp-LDK"/>
@@ -264,6 +265,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ccA-5m-UM5"/>
+        <segue reference="dad-yU-r1g"/>
     </inferredMetricsTieBreakers>
 </document>
