@@ -175,7 +175,7 @@
             </objects>
             <point key="canvasLocation" x="83.5" y="41.5"/>
         </scene>
-        <!--Superhero View Controller-->
+        <!--Popular-->
         <scene sceneID="iYV-JN-idI">
             <objects>
                 <viewController id="oSH-NI-ntU" customClass="SuperheroViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vgn-0w-KXU"/>
+                    <navigationItem key="navigationItem" title="Popular" id="vgn-0w-KXU"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Ykv-ym-oA9" id="mNh-dr-68Y"/>
                         <outlet property="collectionView" destination="d3g-Yb-9bu" id="HYy-SG-0AA"/>
@@ -235,11 +235,11 @@
             </objects>
             <point key="canvasLocation" x="670.5" y="859.5"/>
         </scene>
-        <!--Superhero-->
+        <!--Popular-->
         <scene sceneID="6en-ti-N36">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="goY-S3-Bln" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Superhero" image="superhero_tabbar_item" id="WnD-up-UDx"/>
+                    <tabBarItem key="tabBarItem" title="Popular" image="ticket_tabbar_icon" id="WnD-up-UDx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MUX-bj-NQo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -257,7 +257,7 @@
     </scenes>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
-        <image name="superhero_tabbar_item" width="21" height="23"/>
+        <image name="ticket_tabbar_icon" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -265,6 +265,6 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dad-yU-r1g"/>
+        <segue reference="ccA-5m-UM5"/>
     </inferredMetricsTieBreakers>
 </document>
