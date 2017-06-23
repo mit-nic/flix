@@ -10,15 +10,27 @@ import UIKit
 
 class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     var movies: [[String: Any]] = []
     
     
     override func viewDidLoad() {
+        activityIndicator.startAnimating()
         super.viewDidLoad()
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let cellsPerLine: CGFloat = 2
+        let interItemSpacingtotal = layout.minimumInteritemSpacing*(cellsPerLine - 1)
+        
+        let width = collectionView.frame.size.width/cellsPerLine - interItemSpacingtotal/cellsPerLine
+        
+        layout.itemSize = CGSize(width: width, height: width*3/2)
+        
+        
         fetchMovies()
-        // Do any additional setup after loading the view.
+        activityIndicator.stopAnimating()
     }
 
     override func didReceiveMemoryWarning() {
