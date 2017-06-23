@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var overviewTextView: UITextView!
+    @IBOutlet weak var ratingLabel: UILabel!
     
     var movie: [String: Any]?
     
@@ -29,6 +30,8 @@ class DetailViewController: UIViewController {
                 releaseDateLabel.text! += releaseString!
             }
             overviewTextView.text = movie["overview"] as? String
+            let rating = movie["vote_average"] as! Double
+            ratingLabel.text = "Rating: " + String(rating) + "/10"
             let backdropPathString = movie["backdrop_path"] as! String
             let posterPathString = movie["poster_path"] as! String
             let baseURLString = "https://image.tmdb.org/t/p/w500"
