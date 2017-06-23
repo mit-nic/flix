@@ -80,7 +80,7 @@
             </objects>
             <point key="canvasLocation" x="1119.5" y="39.5"/>
         </scene>
-        <!--Details-->
+        <!--Movie Details-->
         <scene sceneID="Sx2-jO-ZRM">
             <objects>
                 <viewController id="OV7-lv-sQk" customClass="DetailViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,7 +124,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Details" id="NlD-UH-iVe"/>
+                    <navigationItem key="navigationItem" title="Movie Details" id="NlD-UH-iVe"/>
                     <connections>
                         <outlet property="backdropImageView" destination="ICL-1A-34k" id="Wof-me-RwS"/>
                         <outlet property="overviewLabel" destination="kXt-Qx-Kk3" id="m8U-qv-9jC"/>
@@ -208,7 +208,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="153" height="208"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTt-pc-nie">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTt-pc-nie">
                                                     <rect key="frame" x="0.0" y="0.0" width="153" height="208"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
@@ -216,6 +216,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="posterImageView" destination="HTt-pc-nie" id="YWh-Io-LaJ"/>
+                                            <segue destination="OV7-lv-sQk" kind="push" id="ccA-5m-UM5"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -262,4 +263,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ccA-5m-UM5"/>
+    </inferredMetricsTieBreakers>
 </document>
